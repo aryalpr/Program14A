@@ -32,4 +32,16 @@ class CustomSet:
         tmpStr += ' }'
         return tmpStr
 
+    def __and__(self, otherSet):
+        '''
+        Definition: returns a new set with elements common to the first and
+        second sets. --created by Elias Eid
+        Precondition: otherSet is a CustomSet
+        Postcondition: None
+        '''
+        interList = [ element for element in self._setList if element in otherSet._setList]
+        newSet = CustomSet(interList)
+
+        return newSet
+
     

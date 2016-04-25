@@ -21,4 +21,18 @@ print(s1)
 print("Printing s2: ")
 print(s2)
 
+print("Testing the intersection method on s1 and s2:")
+sA = s1 & s2
+print(sA)
+
+print("Creating two sets with no elements in common sB and sC:")
+sB= CustomSet([40,15,60,80,15])
+sC = CustomSet([37,56,17,19,20])
+print(sB)
+print(sC)
+print("Finding the intersection of sB and sC:")
+sD = sB & sC
+print(sD)
+
+
 
