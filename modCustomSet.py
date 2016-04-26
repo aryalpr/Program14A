@@ -44,4 +44,18 @@ class CustomSet:
 
         return newSet
 
+    def __add__(self,tmpList):
+        """
+        Description: This function returns the new list with the elements from
+                     both first and the second sets
+        Pre- condition:None
+        Post- condition:None
+        """
+        for ct in self._setList:
+            if ct not in tmpList._setList:
+                tmpList._setList.append(ct)
+        return tmpList._setList
+
+    
+
     
