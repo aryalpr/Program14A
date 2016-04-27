@@ -68,6 +68,7 @@ class CustomSet:
         """
         for ct in self._setList:
             if ct not in tmpList._setList:
+                tmpList._setList.sort()
                 tmpList._setList.append(ct)
         return tmpList._setList
     
