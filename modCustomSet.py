@@ -71,4 +71,16 @@ class CustomSet:
                 tmpList._setList.sort()
                 tmpList._setList.append(ct)
         return tmpList._setList
+
+    def __contains__(self, number):
+        """
+        Description: This function returns the boolean if the element is in sets.
+        Pre- condition:None
+        Post- condition:None
+        """
+        if number in self._setList:
+            return True
+        else:
+            return False
+
     
