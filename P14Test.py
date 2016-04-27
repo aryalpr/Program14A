@@ -37,3 +37,16 @@ print(sC)
 print("Finding the intersection of sB and sC:")
 sD = sB & sC
 print(sD)
+
+#-- Rojina Amatya
+print("\n")
+U1= CustomSet([20,40,60,80])
+U2= CustomSet([30,40,50,80,100])
+U3= CustomSet([25,89,79,67,12,45])
+print("Testing for the Union Method")
+print("-"*30)
+UA= U1+U2
+UB= U2+U3
+print("The Union between two sets are:",UA)
+print("THe Union between two sets are:",UB)
+
