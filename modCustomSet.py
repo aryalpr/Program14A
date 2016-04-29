@@ -83,4 +83,44 @@ class CustomSet:
         else:
             return False
 
-    
+    def __len__(self):
+        """
+        Description: This function returns the number of entries in the set
+        Precondition: tmpSet must be an object of type CustomSet
+        Postcondition: returns an int
+        """
+        return len(self._setList)
+
+    def __le__(self, tmpSet):
+        """
+        Description: This function determines if the object is a subset of
+            tmpSet
+        Precondition: tmpSet must be type CustomSet
+        Postcondition: returns a Boolean
+        """
+        if len(self._setList) <= len(tmpSet._setList):
+            tmp = True
+            for i in self._setList:
+                if i not in tmpSet._setList:
+                    tmp = False
+                    break
+            return tmp
+        else:
+            return False
+
+    def __ge__(self, tmpSet):
+        """
+        Description: This function determines if the object is a superset of
+            tmpSet
+        Precondition: tmpSet must be type CustomSet
+        Postcondition: returns a Boolean
+        """
+        if len(self._setList) >= len(tmpSet._setList):
+            tmp = True
+            for i in tmpSet._setList:
+                if i not in self._setList:
+                    tmp = False
+                    break
+            return tmp
+        else:
+            return True
