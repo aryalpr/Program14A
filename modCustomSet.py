@@ -123,4 +123,4 @@ class CustomSet:
                     break
             return tmp
         else:
-            return True
+            return False
